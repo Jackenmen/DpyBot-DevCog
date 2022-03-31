@@ -462,5 +462,5 @@ class Dev(commands.Cog):
         ctx.bot.dispatch("message", msg)
 
 
-def setup(bot: commands) -> None:
-    bot.add_cog(Dev())
+async def setup(bot: commands) -> None:
+    await bot.add_cog(Dev())
